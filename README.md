@@ -1,1 +1,3 @@
-# Pet project
+# OpenCV study
+
+Обучение OpenCV
