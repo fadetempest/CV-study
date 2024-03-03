@@ -17,7 +17,10 @@ cv.imshow('Papper man', img_res)
 
 blank = np.zeros(img_res.shape[:2], dtype='uint8')
 
-mask = cv.rectangle(blank,(600,30),(800,800),255,-1)
+
+mask = cv.rectangle(blank,(420,135),(635,500),255,-1)
+
+cv.imshow('Mask',mask)
 
 masked_img = cv.bitwise_and(img_res, img_res, mask=mask)
 cv.imshow('Masked Image', masked_img)
